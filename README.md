@@ -56,10 +56,15 @@ php artisan migrate:fresh --seed
 ### Routes:
 
 * valet runs this project in the browser on the address http://corona.test/coronas
+* to get a single case: http://corona.test/coronas/{id}
 * to add new data: http://corona.test/coronas/create
 * to update/edit, use the button
 * to delete, use the button
 
+#### API get endpoints:
+
+* http://corona.test/api/coronas
+* http://corona.test/api/coronas/{id}
 
 <br><br>
 
