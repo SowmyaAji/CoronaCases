@@ -17,10 +17,11 @@ A simple app built with Laravel Valet (works on Mac OS) that shows, creates, edi
 
 ##### Tutorials to install Laravel correctly for this app to run
 
-https://medium.com/ariel-mejia-dev/install-laravel-valet-on-mac-6e5229cba1e
-**** to install composer, please just use brew install composer (this tutorial gives an old version for it). 
-**** Laravel Valet looks for a directory called /Sites and runs the app from there. The repo has to be cloned to that directory(the pathing in the tutorial above is slightly different)
-**** ``` valet park ``` command is needed once the correct directory is cd -ed into. Alternatively, the ``` valet link [project name] ``` also works.
+https://medium.com/ariel-mejia-dev/install-laravel-valet-on-mac-6e5229cba1e <br>
+
+* to install composer, please just use brew install composer (this tutorial gives an old version for it). 
+* Laravel Valet looks for a directory called /Sites and runs the app from there. The repo has to be cloned to that directory(the pathing in the tutorial above is slightly different)
+* ``` valet park ``` command is needed once the correct directory is cd -ed into. Alternatively, the ``` valet link [project name] ``` also works.
 
 
 ### To run this project:
