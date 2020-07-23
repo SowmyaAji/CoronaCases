@@ -61,10 +61,31 @@ php artisan migrate:fresh --seed
 * to update/edit, use the button
 * to delete, use the button
 
-#### API get endpoints:
-
+#### API endpoints for json data:
+**** GET requests <br>
 * http://corona.test/api/coronas
 * http://corona.test/api/coronas/{id}
+<br>
+**** POST request <br>
+* http://corona.test/api/coronas
+<br>
+**** PUT request <br>
+* http://corona.test/api/coronas/{id}
+<br>
+**** DELETE request <br>
+* http://corona.test/api/coronas/{id}
+<br>
+
+**** Sample payload to test the API on Postman <br>
+{
+	
+    "country_name": "Italy",
+    "symptoms": "Lombardy, Piedmont, Emilia-Romagna, Venito, Tuscany have the highest cases.",
+    "cases": 245000,
+    "fatalities": 35082
+
+	
+}
 
 <br><br>
 
