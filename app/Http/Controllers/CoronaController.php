@@ -17,7 +17,6 @@ class CoronaController extends Controller
     public function index()
     {
         $coronacases = Corona::all();
-
         return view('index', compact('coronacases'));
     }
 
@@ -58,7 +57,8 @@ class CoronaController extends Controller
      */
     public function show($id)
     {
-        //
+        $coronacase = Corona::findOrFail($id);
+      return view('show',compact('coronacase'));
     }
 
     /**
