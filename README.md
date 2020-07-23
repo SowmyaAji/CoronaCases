@@ -60,6 +60,10 @@ php artisan migrate:fresh --seed
 * to update/edit, use the button
 * to delete, use the button
 
+#### API get endpoints:
+
+http://corona.test/api/coronas
+http://corona.test/api/coronas/{id}
 
 <br><br>
 
