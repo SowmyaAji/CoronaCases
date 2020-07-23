@@ -1,4 +1,4 @@
-##Corona Cases
+## Corona Cases
 
 ### Overview
 
@@ -6,9 +6,9 @@ A simple app built with Laravel Valet that shows, creates, edits and deletes the
 
 #### Resources
 
-Laravel framework version 7.4
-Bootstrap CSS framework
-MySQL database
+* Laravel framework version 7.4
+* Bootstrap CSS framework
+* MySQL database
 
 
 
