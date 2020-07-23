@@ -2,19 +2,60 @@
 
 ## Overview
 
-A simple app built with Laravel Valet that shows, creates, edits and deletes the number of Corona cases in the countries with the highest number of cases in the World on July 22, 2020 to demonstrate CRUD functionality using this framework.
+A simple app built with Laravel Valet (works on Mac OS) that shows, creates, edits and deletes the number of Corona cases in the countries with the highest number of cases in the World on July 22, 2020 to demonstrate CRUD functionality using this framework.
 
-### Resources
+### Resources used
 
 * Laravel framework version 7.4
 * Bootstrap CSS framework
 * MySQL database
 
+#### Installation
+
+* Laravel PhP Framework : https://laravel.com/docs/7.x/installation
+* MySQL DB: https://dev.mysql.com/doc/mysql-getting-started/en/
+
+##### Tutorials to install Laravel correctly for this app to run
+
+https://medium.com/ariel-mejia-dev/install-laravel-valet-on-mac-6e5229cba1e
+**** to install composer, please just use brew install composer (this tutorial gives an old version for it). 
+**** Laravel Valet looks for a directory called /Sites and runs the app from there. The repo has to be cloned to that directory(the pathing in the tutorial above is slightly different)
+**** ``` valet park ``` command is needed once the correct directory is cd -ed into. Alternatively, the ``` valet link [project name] ``` also works.
+
+
 ### To run this project:
 
 
+```
+git clone https://github.com/SowmyaAji/CoronaCases.git
+
+cd [cloned directory]
+
+composer install
+
+copy .env.example .env
+
+php artisan key:generate
+
+```
+
+And then, to seed the database afresh:
+
+```
+
+php artisan migrate:fresh --seed
+
+```
+
+### Routes:
+
+* valet runs this project in the browser on the address http://corona.test/coronas
+* to add new data: http://corona.test/coronas/create
+* to update/edit, use the button
+* to delete, use the button
 
 
+<br><br>
 
 
 
