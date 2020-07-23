@@ -22,9 +22,30 @@ Route::get('coronas', function() {
     return Corona::all();
 });
 
-Route::get('coronas/{id}', function($id) {
-    return Corona::find($id);
+Route::get('coronas/{corona}', function($corona) {
+    return Corona::find($corona);
 });
 
-Route::get('coronas', 'CoronaController@index');
-Route::get('coronas/{id}', 'CoronaController@show');
+Route::post('coronas', function(Request $request) {
+     return Corona::create($request->all);
+ });
+
+Route::put('coronas{corona}', function(Request $request, $corona) {
+     $corona = Corona::findOrFail($corona);
+     $corona->update($request->all());
+
+     return $corona;
+ });
+
+Route::delete('coronas/{corona}', function($corona) {
+    Corona::find($corona)->delete();
+    return 204;
+ });
+
+
+Route::get('coronas', 'APIController@index');
+Route::get('coronas/{corona}', 'APIController@show');
+Route::post('coronas', 'APIController@store');
+Route::put('coronas/{corona}', 'APIController@update');
+Route::delete('coronas/{corona}', 'APIController@delete');
+
