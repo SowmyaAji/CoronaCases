@@ -1,14 +1,18 @@
-## Corona Cases
+# Corona Cases
 
-### Overview
+## Overview
 
 A simple app built with Laravel Valet that shows, creates, edits and deletes the number of Corona cases in the countries with the highest number of cases in the World on July 22, 2020 to demonstrate CRUD functionality using this framework.
 
-#### Resources
+### Resources
 
 * Laravel framework version 7.4
 * Bootstrap CSS framework
 * MySQL database
+
+### To run this project:
+
+
 
 
 
