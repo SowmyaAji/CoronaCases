@@ -69,13 +69,13 @@ php artisan migrate:fresh --seed
 <br>
 **** POST request <br>
 * http://corona.test/api/coronas
-<br>
+<br><br>
 **** PUT request <br>
-* http://corona.test/api/coronas/{id}
-<br>
+*  http://corona.test/api/coronas/{id}
+<br><br>
 **** DELETE request <br>
-* http://corona.test/api/coronas/{id}
-<br>
+*  http://corona.test/api/coronas/{id}
+<br><br>
 
 **** Sample payload to test the API on Postman <br>
 {
