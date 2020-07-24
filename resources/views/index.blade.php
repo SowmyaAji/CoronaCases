@@ -19,7 +19,6 @@
                 <td>Cases</td>
                 <td>Fatalities</td>
                 <td colspan="2">Action</td>
-                <td colspan="2">Action</td>
             </tr>
         </thead>
         <tbody>
@@ -40,4 +39,5 @@
         </tbody>
     </table>
 </div>
+
 @endsection

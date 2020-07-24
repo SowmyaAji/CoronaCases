@@ -6,8 +6,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Corona;
 
+
 class CoronaController extends Controller
 {
+
     /**
      * Display a listing of the resource.
      *
