@@ -3,7 +3,6 @@
 // CoronaController.php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App\Corona;
 
@@ -16,7 +15,7 @@ class CoronaController extends Controller
      */
     public function index()
     {
-        $coronacases = Corona::all();
+        $coronacases = Corona::all()->sortByDesc('fatalities');
         return view('index', compact('coronacases'));
     }
 
@@ -40,7 +39,6 @@ class CoronaController extends Controller
     {
         $validatedData = $request->validate([
             'country_name' => 'required|max:255',
-            'symptoms' => 'required',
             'cases' => 'required|numeric',
             'fatalities' => 'numeric',
         ]);
@@ -85,7 +83,6 @@ class CoronaController extends Controller
     {
         $validatedData = $request->validate([
             'country_name' => 'required|max:255',
-            'symptoms' => 'required',
             'cases' => 'required|numeric',
             'fatalities' => 'numeric',
         ]);

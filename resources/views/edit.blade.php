@@ -28,10 +28,6 @@
               <input type="text" class="form-control" name="country_name" value="{{ $coronacase->country_name }}"/>
           </div>
           <div class="form-group">
-              <label for="symptoms">Disease Details</label>
-              <textarea rows="5" columns="5" class="form-control" name="symptoms">{{ $coronacase->symptoms }}</textarea>
-          </div>
-          <div class="form-group">
               <label for="cases">Cases</label>
               <input type="text" class="form-control" name="cases" value="{{ $coronacase->cases }}"/>
           </div>

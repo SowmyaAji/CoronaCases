@@ -16,9 +16,9 @@
             <tr>
                 <td>ID</td>
                 <td>Country</td>
-                <td>Details</td>
                 <td>Cases</td>
                 <td>Fatalities</td>
+                <td colspan="2">Action</td>
                 <td colspan="2">Action</td>
             </tr>
         </thead>
@@ -27,7 +27,6 @@
             <tr>
                 <td>{{$case->id}}</td>
                 <td>{{$case->country_name}}</td>
-                <td>{{$case->symptoms}}</td>
                 <td>{{$case->cases}}</td>
                 <td>{{$case->fatalities}}</td>
                 <td><a href="{{ route('coronas.edit', $case->id) }}" class="btn btn-primary">Edit</a></td>

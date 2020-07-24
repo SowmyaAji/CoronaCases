@@ -26,10 +26,6 @@
                         <input type="text" name="country_name" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="symptoms">Disease Details</label>
-                        <textarea name="symptoms"  cols="5" rows="5" class="form-control"></textarea>
-                    </div>
-                    <div class="form-group">
                         <label for="cases">Number of cases</label>
                         <input type="text" name="cases" class="form-control">
                     </div>

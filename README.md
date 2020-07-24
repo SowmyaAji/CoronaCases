@@ -2,13 +2,14 @@
 
 ## Overview
 
-A simple app built with Laravel Valet (works on Mac OS) that shows, creates, edits and deletes the number of Corona cases in the countries with the highest number of cases in the World on July 22, 2020 to demonstrate CRUD functionality using this framework.
+A simple app built with Laravel Valet (works on Mac OS) that shows the list of cases and fatalities due to the Corona virus (Covid 19) in the world, updated several times in a day. The app, to demostrate CRUD functionality, also allows creation, updation and deletion of the entries
 
 ### Resources used
 
 * Laravel framework version 7.4
 * Bootstrap CSS framework
 * MySQL database
+* https://covid19api.com/ -- Covid19 API  built by Kyle Redelinghuys that updates data from Johns Hopkins CSSE
 
 #### Installation
 
