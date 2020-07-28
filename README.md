@@ -40,9 +40,19 @@ cd [cloned directory]
 
 composer install
 
+npm install
+
 copy .env.example .env
 
 php artisan key:generate
+
+```
+Create a database in MySQL.<br>
+In the .env file fill in the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD options to match the credentials of the database you just created. <br>
+Then type:<br>
+
+```
+php artisan migrate
 
 ```
 
@@ -53,6 +63,9 @@ And then, to seed the database afresh:
 php artisan migrate:fresh --seed
 
 ```
+
+Here is a guide on how to clone a Laravel project from Github, in case there are any problems: https://devmarketer.io/learn/setup-laravel-project-cloned-github-com/
+
 
 ### Routes:
 
